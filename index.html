@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Amber — Designer</title>
-  <meta name="description" content="Amber is a designer crafting beautiful brand identities, digital products, and editorial work." />
+  <title>Amber Daniels — UX Designer</title>
+  <meta name="description" content="Amber Daniels is a UX Designer crafting human-centered digital experiences through research, design systems, and thoughtful interaction design." />
+  <meta property="og:title" content="Amber Daniels — UX Designer" />
+  <meta property="og:description" content="UX Designer specializing in research, product design, and interaction design." />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
@@ -13,116 +16,199 @@
 <body>
 
   <!-- ── Navigation ── -->
-  <nav>
-    <div class="nav-logo">Amber<span>.</span></div>
+  <nav aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">Amber<span>.</span></a>
     <ul class="nav-links">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="index.html" class="nav-active">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
   <!-- ── Hero ── -->
   <section class="hero">
     <div class="hero-content">
-      <span class="hero-eyebrow">Designer &amp; Creative</span>
-      <h1>Crafting experiences<br><em>that resonate.</em></h1>
-      <p>I design with intention — blending aesthetics with purpose to create work that moves people.</p>
-      <a href="#work" class="btn">View My Work</a>
+      <span class="hero-eyebrow">UX Designer &amp; Researcher</span>
+      <h1>Hi, I'm Amber.<br><em>I design with people.</em></h1>
+      <p>I create human-centered digital experiences through research, systems thinking, and thoughtful interaction design.</p>
+      <div class="hero-ctas">
+        <a href="work.html" class="btn">View My Work</a>
+        <a href="contact.html" class="btn btn-outline">Contact Me</a>
+      </div>
     </div>
-    <div class="hero-decoration" aria-hidden="true">
-      <div class="circle circle-1"></div>
-      <div class="circle circle-2"></div>
+
+    <!-- Profile picture -->
+    <div class="hero-profile" aria-hidden="true">
+      <div class="profile-img-wrap">
+        <div class="profile-img-placeholder" aria-label="Amber Daniels">AD</div>
+      </div>
+      <div class="hero-decoration">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+      </div>
     </div>
   </section>
 
-  <!-- ── Portfolio ── -->
-  <section id="work" class="section work-section">
+  <!-- ── Quick Intro ── -->
+  <section class="intro-strip section-sm">
+    <div class="container intro-grid">
+      <div class="intro-item">
+        <span class="intro-icon" aria-hidden="true">🔍</span>
+        <strong>UX Research</strong>
+        <p>User interviews, usability testing, and synthesis</p>
+      </div>
+      <div class="intro-item">
+        <span class="intro-icon" aria-hidden="true">🎨</span>
+        <strong>Product Design</strong>
+        <p>End-to-end design from wireframes to high-fidelity</p>
+      </div>
+      <div class="intro-item">
+        <span class="intro-icon" aria-hidden="true">⚡</span>
+        <strong>Interaction Design</strong>
+        <p>Purposeful micro-interactions and user flows</p>
+      </div>
+      <div class="intro-item">
+        <span class="intro-icon" aria-hidden="true">🧩</span>
+        <strong>Design Systems</strong>
+        <p>Scalable component libraries and documentation</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Featured Projects ── -->
+  <section class="section work-section">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">Portfolio</span>
-        <h2>Selected Work</h2>
+        <h2>Featured Projects</h2>
+        <p>A selection of case studies showcasing my UX process.</p>
       </div>
       <div class="work-grid">
 
         <article class="work-card">
-          <div class="work-card-img" style="background: linear-gradient(135deg, #E8DDD4, #D4C4B0);"></div>
+          <a href="project-bloom.html" class="work-card-img-link">
+            <div class="work-card-img" style="background: linear-gradient(135deg, #D4DDE8, #B8C8DC);" role="img" aria-label="Bloom App project thumbnail">
+              <span class="work-card-hover-label">View Case Study →</span>
+            </div>
+          </a>
           <div class="work-card-body">
-            <span class="work-tag">Brand Identity</span>
-            <h3>Studio Maeve</h3>
-            <p>A complete brand identity system for a luxury interior design studio.</p>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <div class="work-card-img" style="background: linear-gradient(135deg, #D4DDE8, #B8C8DC);"></div>
-          <div class="work-card-body">
-            <span class="work-tag">UI / UX Design</span>
+            <span class="work-tag">Mobile · UX/UI Design</span>
             <h3>Bloom App</h3>
-            <p>Mobile-first wellness app focused on mindful daily routines.</p>
+            <p>Mobile-first wellness app designed around mindful daily routines and behavior change research.</p>
+            <div class="work-meta">
+              <span>Role: Lead UX Designer</span>
+              <span>Timeline: 10 weeks</span>
+            </div>
+            <a href="project-bloom.html" class="work-card-link">View Case Study →</a>
           </div>
         </article>
 
         <article class="work-card">
-          <div class="work-card-img" style="background: linear-gradient(135deg, #DDE8D4, #C4D8B8);"></div>
+          <a href="project-maeve.html" class="work-card-img-link">
+            <div class="work-card-img" style="background: linear-gradient(135deg, #E8DDD4, #D4C4B0);" role="img" aria-label="Maeve Design System project thumbnail">
+              <span class="work-card-hover-label">View Case Study →</span>
+            </div>
+          </a>
           <div class="work-card-body">
-            <span class="work-tag">Editorial</span>
-            <h3>Terrain Magazine</h3>
-            <p>Art direction and layout design for a quarterly print publication.</p>
+            <span class="work-tag">Enterprise · Design Systems</span>
+            <h3>Maeve Design System</h3>
+            <p>A scalable component library and documentation system adopted across 4 product teams.</p>
+            <div class="work-meta">
+              <span>Role: Design Systems Lead</span>
+              <span>Timeline: 6 months</span>
+            </div>
+            <a href="project-maeve.html" class="work-card-link">View Case Study →</a>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <a href="project-terrain.html" class="work-card-img-link">
+            <div class="work-card-img" style="background: linear-gradient(135deg, #DDE8D4, #C4D8B8);" role="img" aria-label="Terrain project thumbnail">
+              <span class="work-card-hover-label">View Case Study →</span>
+            </div>
+          </a>
+          <div class="work-card-body">
+            <span class="work-tag">Accessibility · UX Research</span>
+            <h3>Terrain Gov Portal</h3>
+            <p>Redesigning a government services portal with a focus on accessibility and plain language.</p>
+            <div class="work-meta">
+              <span>Role: UX Researcher &amp; Designer</span>
+              <span>Timeline: 4 months</span>
+            </div>
+            <a href="project-terrain.html" class="work-card-link">View Case Study →</a>
           </div>
         </article>
 
       </div>
+      <div class="section-cta">
+        <a href="work.html" class="btn btn-outline">View All Projects</a>
+      </div>
     </div>
   </section>
 
-  <!-- ── About ── -->
-  <section id="about" class="section about-section">
-    <div class="container about-grid">
-
-      <div class="about-visual">
-        <div class="about-img-placeholder" aria-label="Amber">A</div>
-        <div class="about-tag-pill">Available for projects</div>
+  <!-- ── Weather Widget ── -->
+  <section class="section-sm weather-section">
+    <div class="container">
+      <div class="weather-widget" id="weather-widget" aria-live="polite">
+        <div class="weather-loading">Fetching your local weather…</div>
       </div>
-
-      <div class="about-text">
-        <span class="section-tag">About</span>
-        <h2>Hi, I'm Amber.</h2>
-        <p>I'm a designer who believes great design is both seen and felt. With a background spanning brand identity, digital products, and editorial design, I bring a thoughtful, human-centered approach to every project.</p>
-        <p>When I'm not designing, you'll find me exploring art galleries, obsessing over typography, or hunting for the perfect cup of coffee.</p>
-        <div class="skills-list">
-          <span class="skill-chip">Brand Identity</span>
-          <span class="skill-chip">UI / UX</span>
-          <span class="skill-chip">Art Direction</span>
-          <span class="skill-chip">Editorial</span>
-          <span class="skill-chip">Typography</span>
-          <span class="skill-chip">Motion</span>
-        </div>
-      </div>
-
     </div>
   </section>
 
-  <!-- ── Contact ── -->
-  <section id="contact" class="section contact-section">
-    <div class="container contact-inner">
-      <span class="section-tag">Contact</span>
-      <h2>Let's create something<br><em>beautiful together.</em></h2>
-      <p>Open to freelance projects, collaborations, and full-time opportunities.</p>
-      <a href="mailto:amber@example.com" class="btn btn-outline">Say Hello</a>
-      <div class="social-links">
-        <a href="#" rel="noopener noreferrer">Dribbble</a>
-        <a href="#" rel="noopener noreferrer">Behance</a>
-        <a href="#" rel="noopener noreferrer">LinkedIn</a>
-        <a href="#" rel="noopener noreferrer">Instagram</a>
+  <!-- ── Testimonial Preview ── -->
+  <section class="section feedback-preview-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Feedback</span>
+        <h2>What Teams Say</h2>
+      </div>
+      <div class="quotes-grid">
+
+        <blockquote class="quote-card">
+          <p class="quote-text">"Amber has an incredible ability to synthesize complex research into clear, actionable design decisions. Her work elevated our entire product."</p>
+          <footer class="quote-author">
+            <div class="quote-avatar" aria-hidden="true">JR</div>
+            <div>
+              <strong>Jordan Rivera</strong>
+              <span>Senior Product Manager · Slalom</span>
+            </div>
+          </footer>
+        </blockquote>
+
+        <blockquote class="quote-card">
+          <p class="quote-text">"One of the most collaborative designers I've worked with. Amber brings both empathy and rigor to every project she touches."</p>
+          <footer class="quote-author">
+            <div class="quote-avatar" aria-hidden="true">MT</div>
+            <div>
+              <strong>Maya Torres</strong>
+              <span>Engineering Lead · Bloom Health</span>
+            </div>
+          </footer>
+        </blockquote>
+
+      </div>
+      <div class="section-cta">
+        <a href="feedback.html" class="btn btn-outline">Read All Feedback</a>
       </div>
     </div>
   </section>
 
   <!-- ── Footer ── -->
   <footer>
-    <p>&copy; 2026 Amber. Designed with care.</p>
+    <div class="container footer-inner">
+      <div class="footer-logo">Amber<span>.</span></div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="footer-copy">&copy; 2026 Amber Daniels. Designed with care.</p>
+    </div>
   </footer>
 
+  <script src="js/weather.js"></script>
 </body>
 </html>
